@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <TextView
+            android:text="账号1(不设置suffixRightPadding)"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <cn.lemon.edittextex.EditTextEX
+            xmlns:edtEX="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="100dp"
+            android:paddingLeft="20dp"
+            edtEX:edtId="@+id/edt_pwd"
+            edtEX:needClear="true">
+
+            <EditText
+                android:id="@id/edt_pwd"
+                android:paddingRight="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </cn.lemon.edittextex.EditTextEX>
+
+        <cn.lemon.edittextex.EditTextEX
+            xmlns:edtEX="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:layout_height="80dp"
+            edtEX:edtId="@+id/edt_pwd"
+            edtEX:needClear="true"
+            edtEX:suffixRightPadding="@dimen/d_22">
+
+            <EditText
+                android:id="@id/edt_pwd"
+                android:paddingRight="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="账号2(这里的布局实际上在EditText上方，所以触摸这部分也可以唤起输入法)"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </cn.lemon.edittextex.EditTextEX>
+
+        <cn.lemon.edittextex.EditTextEX
+            xmlns:edtEX="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:layout_height="80dp"
+            edtEX:edtId="@+id/edt_pwd"
+            edtEX:needClear="true"
+            android:layout_marginRight="@dimen/d_22"
+            edtEX:needPhoneNumberPrefix="true">
+
+            <EditText
+                android:id="@id/edt_pwd"
+                android:paddingRight="50dp"
+                android:paddingLeft="50dp"
+                android:inputType="phone"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="手机号(需设置paddingLeft>=50dp)"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </cn.lemon.edittextex.EditTextEX>
+
+        <cn.lemon.edittextex.EditTextEX
+            xmlns:edtEX="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:layout_height="80dp"
+            edtEX:edtId="@+id/edt_pwd"
+            edtEX:needClear="true"
+            edtEX:suffixRightPadding="50dp"
+            edtEX:needShowHidePassword="true">
+
+            <EditText
+                android:id="@id/edt_pwd"
+                android:paddingRight="150dp"
+                android:inputType="textPassword"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="密码(通过EditText的paddingRight来调节后缀布局大小)"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </cn.lemon.edittextex.EditTextEX>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EditTextEX">
+        <!-- 文本输入框ID -->
+        <attr name="edtId" format="reference"/>
+        <!-- 是否需要一键清空 默认不需要 -->
+        <attr name="needClear" format="boolean"/>
+        <!-- 是否需要密码的显示隐藏 默认不显示 -->
+        <attr name="needShowHidePassword" format="boolean"/>
+        <!-- 默认是否显示密码 -->
+        <attr name="ShowPassword" format="boolean"/>
+        <!-- 是否需要手机号码前缀 -->
+        <attr name="needPhoneNumberPrefix" format="boolean"/>
+        <!-- 手机号前缀显示 默认为+86 -->
+        <attr name="phoneNumberPrefix" format="string"/>
+        <!-- 后缀布局清空按钮和密码显示的间距 默认11dp -->
+        <attr name="suffixItemPadding" format="dimension"/>
+        <!-- 后缀布局与EditText的右间距 -->
+        <attr name="suffixRightPadding" format="dimension"/>
+    </declare-styleable>
+</resources>
